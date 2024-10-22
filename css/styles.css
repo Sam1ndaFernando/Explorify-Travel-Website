@@ -8,7 +8,7 @@
     --text-color: hsl(0, 0%, 70%);
     --text-color-light: hsl(0, 0%, 60%);
     --body-color: hsl(0, 0%, 0%);
-    --container-color: hsl(0, 0%, 8%);
+    --container-color: hsl(0, 0%, 18%);
 
     --body-font: "Poppins", sans-serif;
     --second-font: "Montserrat", sans-serif;
@@ -122,12 +122,14 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
+
 }
 .nav{
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .navLogo{
@@ -154,7 +156,6 @@ img{
         padding-block: 4rem;
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
-        transition: top .4s;
     }
 }
 
@@ -198,14 +199,19 @@ img{
 .blur-header::after{
     content: '';
     position: absolute;
-    width: 1000%;
+    width: 70%;
     height: 100%;
-    background-color: hsla(0, 0%, 0%, .3);
+    /*background-color: hsla(0, 0%, 0%, .3);*/
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(103, 255, 238, 0.4));
+
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     top: 0;
-    left: 0;
+    left: 15%;
     z-index: -1;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
 }
 
 .active-link::after{
@@ -360,6 +366,8 @@ img{
     position: relative;
     overflow: hidden;
     margin-bottom: 1rem;
+    border-radius: 20px;
+
 }
 
 .popularImg{
@@ -487,6 +495,7 @@ img{
     position: relative;
     justify-self: center;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .joinImg{
