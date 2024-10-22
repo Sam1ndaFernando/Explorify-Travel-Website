@@ -17,7 +17,6 @@ if(navClose){
     })
 }
 
-/*=============== Remove Menu Mobile ===============*/
 const navLink = document.querySelectorAll('.navLink')
 
 const linkAction = () =>{
@@ -26,7 +25,6 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== Blur Header ===============*/
 const blurHeader = () =>{
     const header = document.getElementById('header')
     this.scrollY >= 50 ? header.classList.add('blur-header')
@@ -34,7 +32,6 @@ const blurHeader = () =>{
 }
 window.addEventListener('scroll', blurHeader)
 
-/*=============== Scroll Sections ===============*/
 const scrollUp = () =>{
     const scrollUp = document.getElementById('scroll-up')
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
@@ -42,7 +39,6 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== Scroll sections active link ===============*/
 
 const sections = document.querySelectorAll('section[id]')
 
@@ -64,7 +60,6 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== Scroll Reveal Animation ===============*/
 
 const sr = ScrollReveal({
     origin: 'top',
