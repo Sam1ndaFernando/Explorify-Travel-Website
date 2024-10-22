@@ -211,8 +211,19 @@ img{
     z-index: -1;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+    animation: fadeIn 2s ease-in-out forwards;
 
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .active-link::after{
     width: 70%;
@@ -518,11 +529,12 @@ img{
     transform: scale(1.2);
 }
 
-/* ==========================FOOTER========================== */
+/* ==========================footer========================== */
 
 .footer{
     padding-block: 2.5rem;
-    background-color: var(--container-color);
+    background: #004242;
+
 }
 
 .footerContent{
@@ -632,6 +644,7 @@ img{
 
 .scrollup:hover{
     transform: translateY(-.25rem);
+
 }
 
 /* ==========================Show SCROLL========================== */
@@ -878,4 +891,6 @@ img{
         right: 3rem;
     }
 }
+
+
 
