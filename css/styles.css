@@ -496,6 +496,7 @@ img{
 .joinInput{
     padding: 1.25rem 1rem;
     background-color: var(--container-color);
+    border-radius: 15px;
 }
 
 .joinButton{
@@ -539,15 +540,20 @@ img{
 
 .footerContent{
     row-gap: 3.5rem;
+    margin-left: 1200px;
+
 }
 
 .footerLogo{
-    display: inline-block;
+    position: absolute;
+    right: -160px;
     color: var(--title-color);
-    font-size: var(--h2-font-size);
+    font-size: 80px;
     font-family: var(--second-font);
     font-weight: var(--font-semi-bold);
-    margin-bottom: 1rem;
+    bottom: 25%;
+    opacity: 20%;
+    /*margin-bottom: 1rem;*/
 }
 
 .footerData{
@@ -629,6 +635,7 @@ img{
 
 .scrollup{
     position: fixed;
+    border-radius: 8px;
     right: 1rem;
     bottom: 3rem;
     background-color: hsla(0, 0%, 100%, .1);
